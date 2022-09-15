@@ -1,0 +1,176 @@
+2022-08-31 22:05:11,071 ERROR Internal Server Error: / /Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/utils/log.py, (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 16: 'get_available_languages'. Did you forget to register or load this tag?"), <traceback object at 0x10b3e6f40>)
+Traceback (most recent call last):
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'get_available_languages'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/templatetags/cache.py", line 53, in render
+    value = self.nodelist.render(context)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 197, in render
+    template = context.template.engine.select_template(template_name)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/engine.py", line 207, in select_template
+    return self.get_template(template_name)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 16: 'get_available_languages'. Did you forget to register or load this tag?
+2022-08-31 22:05:11,119 ERROR "GET / HTTP/1.1" 500 213148 /Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/core/servers/basehttp.py, None
+2022-09-12 10:28:57,188 ERROR Internal Server Error: / /Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/utils/log.py, (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("<ExtendsNode: extends 'default.html'> must be the first tag in the template."), <traceback object at 0x106adb080>)
+Traceback (most recent call last):
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/template/base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'default.html'> must be the first tag in the template.
+2022-09-12 10:28:57,344 ERROR "GET / HTTP/1.1" 500 131415 /Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/core/servers/basehttp.py, None
+2022-09-14 13:44:07,590 ERROR Internal Server Error: /api/news/ /Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/utils/log.py, (<class 'django.core.exceptions.ImproperlyConfigured'>, ImproperlyConfigured('Could not resolve URL for hyperlinked relationship using view name "author-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.'), <traceback object at 0x10fd51e80>)
+Traceback (most recent call last):
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'author-detail' not found. 'author-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/rest_framework/relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "author-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2022-09-14 13:44:07,642 ERROR "GET /api/news/ HTTP/1.1" 500 163556 /Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/core/servers/basehttp.py, None
+2022-09-15 11:29:31,249 ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+ /Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/core/servers/basehttp.py, None
+2022-09-15 11:30:42,424 ERROR Internal Server Error: /api/news /Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/utils/log.py, (<class 'RuntimeError'>, RuntimeError("You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/news/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings."), <traceback object at 0x108072c00>)
+Traceback (most recent call last):
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/news/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2022-09-15 11:30:42,477 ERROR "POST /api/news HTTP/1.1" 500 69761 /Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/core/servers/basehttp.py, None
+2022-09-15 11:33:43,073 ERROR Internal Server Error: /api/news /Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/utils/log.py, (<class 'RuntimeError'>, RuntimeError("You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/news/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings."), <traceback object at 0x108475040>)
+Traceback (most recent call last):
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/news/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2022-09-15 11:33:43,105 ERROR "POST /api/news HTTP/1.1" 500 69761 /Users/anna/PycharmProjects/python/ News Portal 31.07.22/venv/lib/python3.10/site-packages/django/core/servers/basehttp.py, None
